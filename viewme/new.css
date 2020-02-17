@@ -1,0 +1,7 @@
+body{
+    background-color: lightskyblue;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+}

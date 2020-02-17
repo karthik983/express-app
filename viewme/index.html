@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration form</title>
+    <link href="./new.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1>Registration Form</h1>
+        <form id="container" method="POST" action="/register">
+            <label for="fname">Enter your First name:</label>
+            <input name="fname" id="fname" type="text"><br><br>
+            <label for="lname">Enter your last name:</label>
+            <input name="lname" id="lname" type="text"><br><br>
+            <label for="pass">Enter your password:</label>
+            <input name="pass" id="pass" type="password" required><br><br>
+            <label for="repass">Re-Enter your password:</label>
+            <input name="repass" id="repass" type="password"><br><br>
+            <label for="email">Enter your email:</label>
+            <input name="email" id="email" type="email"><br><br>
+            <label for="mobile">Enter your mobile:</label>
+            <input name="mobile" id="mobile" type="tel" pattern="[0-9]{10}"><br><br>
+            <label for="address">Enter your address:</label>
+            <textarea name="address" id="address"></textarea><br><br>
+            <label for="male">Select your Gender:</label>
+            <label for="male">Male</label>
+            <input name="gender" id="male" type="radio" value="male">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female"><br><br>
+            <label for="hobbies" >Select your hobbies:</label>
+            <label for="hob1"> Swimming</label>
+            <input type="checkbox" id="hob1" name="hob1" value="Swimming">
+            <label for="hob2"> Reading books</label>
+            <input type="checkbox" id=" hob2" name="hob2" value="Reading books">
+            <label for="hob3"> Watching movies</label>
+            <input type="checkbox" id="hob3" name="hob3" value="Watching movies"><br><br>
+            <label for="dob">Select your DOB:</label>
+            <input type="date" name="dob" id="dob" required><br><br>
+            <label for="country">Select your Country:</label>
+            <select id="country" name="country" >
+                <option value="India">India</option>
+            </select><br><br>
+            <input name="submit" type="submit" id="submit">
+        </form>
+    </div>
+    <script>
+    var password = document.getElementById("pass")
+  , confirm_password = document.getElementById("repass");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+First Name: adsd
+Last Name : kk
+Password:22
+email:karthikh032@gmail.com
+mobile:1234567891
+Address:dssv
+DOB:2020-02-14
+Gender:female
+Hobbies:Swimming and Watching movies
+Country:India
