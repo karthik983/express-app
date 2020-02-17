@@ -1,10 +1,10 @@
-First Name: adsd
-Last Name : kk
-Password:22
+First Name: scdcd
+Last Name : nkd
+Password:224
 email:karthikh032@gmail.com
-mobile:1234567891
-Address:dssv
-DOB:2020-02-14
+mobile:1243455644
+Address:dvfv
+DOB:2020-02-11
 Gender:female
-Hobbies:Swimming and Watching movies
+Hobbies:Watching movies
 Country:India

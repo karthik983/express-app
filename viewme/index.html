@@ -26,11 +26,14 @@
             <input name="mobile" id="mobile" type="tel" pattern="[0-9]{10}"><br><br>
             <label for="address">Enter your address:</label>
             <textarea name="address" id="address"></textarea><br><br>
+            <div>
             <label for="male">Select your Gender:</label>
             <label for="male">Male</label>
             <input name="gender" id="male" type="radio" value="male">
             <label for="female">Female</label>
             <input type="radio" id="female" name="gender" value="female"><br><br>
+            </div>
+            <div>
             <label for="hobbies" >Select your hobbies:</label>
             <label for="hob1"> Swimming</label>
             <input type="checkbox" id="hob1" name="hob1" value="Swimming">
@@ -38,13 +41,16 @@
             <input type="checkbox" id=" hob2" name="hob2" value="Reading books">
             <label for="hob3"> Watching movies</label>
             <input type="checkbox" id="hob3" name="hob3" value="Watching movies"><br><br>
+            </div>
             <label for="dob">Select your DOB:</label>
             <input type="date" name="dob" id="dob" required><br><br>
             <label for="country">Select your Country:</label>
             <select id="country" name="country" >
                 <option value="India">India</option>
             </select><br><br>
+            <div id="submit">
             <input name="submit" type="submit" id="submit">
+            </div>
         </form>
     </div>
     <script>

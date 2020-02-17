@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static("viewme"))
 
-app.post("/register", (req, res, next) => {
+app.post("/register", (req, res) => {
     res.json({ "Success": "true" });
     if(req.body.hob1==undefined && req.body.hob2==undefined && req.body.hob3==undefined){
         req.body.hobbies="none"
@@ -37,6 +37,11 @@ app.post("/register", (req, res, next) => {
                 throw err;
             } else {
                 console.log("Saved your file!")
+                app.get("/access",(req,res)=>{
+                    fs.readFile("data.txt",function(err,data){
+                        res.send(data)
+                    })
+                })
             }
         })
     })
