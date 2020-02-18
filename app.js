@@ -39,7 +39,7 @@ app.post("/register", (req, res) => {
                 console.log("Saved your file!")
                 app.get("/access",(req,res)=>{
                     fs.readFile("data.txt",function(err,data){
-                        res.send(data)
+                        res.send(data.toString())
                     })
                 })
             }
